@@ -20,7 +20,9 @@ Em um browser, digite:
 http://localhost:7001
 ```
 
-Então, use a aplicação e experimente as suas features.
+Então, use a aplicação e experimente as suas features. Segue um screenshot de exemplo após o cadastro de algumas tarefas.
+
+![Screenshot](./screenshot.png)
 
 ## Rodando o Primeiro Teste E2E
 
