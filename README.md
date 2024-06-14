@@ -22,7 +22,8 @@ http://localhost:7001
 
 Então, use a aplicação e experimente as suas features. Segue um screenshot de exemplo após o cadastro de algumas tarefas.
 
-![Screenshot](./screenshot.png)
+<img src="./screenshot.png" width="450" >
+
 
 ## Rodando o Primeiro Teste E2E
 
