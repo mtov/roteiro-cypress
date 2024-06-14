@@ -1,42 +1,41 @@
-# TodoMVC: JavaScript Es5
+# Roteiro de Testes E2E Usando Cypress
 
-## Description
+## Aplicação Alvo
 
-This application uses JavaScript with ES5 language features to implement a todo application.
+Neste roteiro vamos testar uma aplicação simples de criação de lista de tarefas, chamada TodoMVC, cujo repositório se encontra [aqui](https://github.com/tastejs/todomvc).
 
-JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it..
+Para facilitar, copiamos o código dessa aplicação, especificamente a implementação baseada em JavaScript ES5, para este diretório. Ou seja, com isso, você vai fazer o roteiro integralmente neste repositório. Basta, primeiro, cloná-lo para sua máquina local.
 
-[JavaScript - developer.mozilla.org](http://developer.mozilla.org/en-US/docs/JavaScript)
-
-## Implementation Details
-
-This implementation uses an explicit MVC pattern, with a clear file structure to reflect the architecture. The storage solution uses an in-memory data object that implements a simple array to hold the todos.
-
-## Build Steps
-
-A simple build script copies all necessary files to a `dist` folder.
-It does not rely on compilers or transpilers and serves raw html, css and js files to the user.
+Depois disso, digite em um terminal aberto no diretório clonado:
 
 ```
 npm run build
+npm install
+npm run dev
 ```
 
-## Requirements
-
-The only requirement is an installation of Node, to be able to install dependencies and run scripts to serve a local server.
+Em um browser, digite:
 
 ```
-* Node (min version: 18.13.0)
-* NPM (min version: 8.19.3)
+http://localhost:7001
 ```
 
-## Local Preview
+Então, use a aplicação e experimente as suas features.
+
+## Rodando o Primeiro Teste E2E
+
+Em um novo terminal, abra a interface gráfica do Cypress, digitando na raiz do seu diretório:
 
 ```
-terminal:
-1. npm install
-2. npm run dev
-
-browser:
-1. http://localhost:7001/
+npx cypress open
 ```
+
+Então escolha: "E2E Testing", "Chrome" e "Start E2E Testing in Chrome".
+
+Depois, abra um teste que já implementamos, clicando no arquivo chamado `spec.cy.js`. O teste será aberto pelo Cypress e será automaticamente executado. Isso ocorre em uma nova janela do Chrome que também foi aberta automaticamente pelo Cypress.
+
+Estude esse primeiro teste, que está no diretório local `cypress\e2e`(ou clique [aqui](https://github.com/mtov/roteiro-cypress/blob/main/cypress/e2e/spec.cy.js))
+
+## Exercício
+
+Implemente mais três testes (isto é, comandos `it`) no arquivo `cypress\e2e\spec.cy.js`
