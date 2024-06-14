@@ -34,7 +34,7 @@ Então escolha: "E2E Testing", "Chrome" e "Start E2E Testing in Chrome".
 
 Depois, abra um teste que já implementamos, clicando no arquivo chamado `spec.cy.js`. O teste será aberto pelo Cypress e será automaticamente executado. Isso ocorre em uma nova janela do Chrome que também foi aberta automaticamente pelo Cypress.
 
-Estude esse primeiro teste, que está em [.\cypress\e2e\spec.cy.js](.\cypress\e2e\spec.cy.js)
+Estude esse primeiro teste, que está em [cypress\e2e\spec.cy.js](.\cypress\e2e\spec.cy.js)
 
 ## Exercício
 
