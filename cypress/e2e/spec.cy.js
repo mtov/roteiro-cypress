@@ -6,17 +6,17 @@ describe('template spec', () => {
   it('Insere uma tarefa', () => {
     cy.visit('http://127.0.0.1:7001'); 
 
-    cy.get('.new-todo') // seleciona input para inserir tarefas
-      .type('TP2 de Engenharia de Software{enter}'); // digita tarefa
+    cy.get('.new-todo')
+      .type('TP2 de Engenharia de Software{enter}');
 
-    cy.get('.todo-list li') // seleciona lista de todos
+    cy.get('.todo-list li')
       .should('have.length', 1) 
       .first()
       .should('have.text', 'TP2 de Engenharia de Software'); 
   });
 
   it('Insere e deleta uma tarefa', () => {
-    cy.visit('http://127.0.0.1:7001'); // Visit the TodoMVC app
+    cy.visit('http://127.0.0.1:7001');
 
     cy.get('.new-todo')
       .type('TP2 de Engenharia de Software{enter}');
@@ -40,21 +40,18 @@ describe('template spec', () => {
       .first()
       .click();
 
-    // Seleciona apenas tarefas ativas
     cy.contains('Active').click();
     cy.get('.todo-list li')
       .should('have.length', 1)
       .first()
       .should('have.text', 'Prova de ES');
 
-    // Seleciona apenas tarefas completas
     cy.contains('Completed').click();
     cy.get('.todo-list li')
       .should('have.length', 1)
       .first()
       .should('have.text', 'TP2 de ES');
 
-    // Show all todos
     cy.contains('All').click();
     cy.get('.todo-list li')
       .should('have.length', 2);
