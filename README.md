@@ -39,6 +39,12 @@ Depois, abra um teste que já implementamos, clicando no arquivo chamado `spec.c
 
 Estude esse primeiro teste, que está no diretório local `cypress\e2e`(ou clique [aqui](https://github.com/mtov/roteiro-cypress/blob/main/cypress/e2e/spec.cy.js))
 
+Observação: se quiser, você pode rodar os testes também via linha de comando:
+
+```bash
+npx cypress run
+```
+
 ## Exercício
 
 Implemente mais três testes (isto é, comandos `it`) no arquivo `cypress\e2e\spec.cy.js`
