@@ -9,8 +9,8 @@ Para facilitar, copiamos o código dessa aplicação, especificamente a implemen
 Depois disso, digite em um terminal aberto no diretório clonado:
 
 ```
-npm run build
 npm install
+npm run build
 npm run dev
 ```
 
