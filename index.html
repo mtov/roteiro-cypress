@@ -13,26 +13,26 @@
         <section class="todoapp">
             <header class="header">
                 <h1>todos</h1>
-                <input class="new-todo" placeholder="What needs to be done?" autofocus />
+                <input data-cy="todo-input" class="new-todo" placeholder="What needs to be done?" autofocus />
             </header>
             <main class="main">
                 <div class="toggle-all-container">
                     <input class="toggle-all" type="checkbox" />
                     <label class="toggle-all-label" for="toggle-all">Mark all as complete</label>
                 </div>
-                <ul class="todo-list"></ul>
+                <ul data-cy="todos-list" class="todo-list"></ul>
             </main>
             <footer class="footer">
                 <span class="todo-count"></span>
                 <ul class="filters">
                     <li>
-                        <a href="#/" class="selected">All</a>
+                        <a data-cy="filter-all-link" href="#/" class="selected">All</a>
                     </li>
                     <li>
-                        <a href="#/active">Active</a>
+                        <a data-cy="filter-active-link" href="#/active">Active</a>
                     </li>
                     <li>
-                        <a href="#/completed">Completed</a>
+                        <a data-cy="filter-completed-link" href="#/completed">Completed</a>
                     </li>
                 </ul>
                 <button class="clear-completed">Clear completed</button>
