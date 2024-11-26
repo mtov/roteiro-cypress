@@ -31,9 +31,9 @@
         this.defaultTemplate
             = '<li data-id="{{id}}" class="{{completed}}">'
             + '<div class="view">'
-            + '<input class="toggle" type="checkbox" {{checked}}>'
+            + '<input data-cy="toggle-todo-checkbox" class="toggle" type="checkbox" {{checked}}>'
             + "<label>{{title}}</label>"
-            + '<button class="destroy"></button>'
+            + '<button data-cy="remove-todo-btn" class="destroy"></button>'
             + "</div>"
             + "</li>";
     }
